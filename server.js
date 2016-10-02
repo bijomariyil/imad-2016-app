@@ -22,7 +22,7 @@ var articles = {
     articletwo:{
     title: "Article Two | Bijo Mariyil",
     heading: "ARTICLE T W O",
-    date: "02nd october 2016",
+    date: "01st october 2016",
     content: `
     <p>
        Hi Everybody, I am Little busy with my duties and responsibilities and also late. Anyway this is my first Article.
@@ -82,7 +82,7 @@ app.get ('/:articlename', function (req, res) {
     //articlename=articleone
     //articles(articlename)={}content object of article one
     var articlename=req.params.articlename;
-  res.send(createtemplate(articles(articlename)));
+  res.send(createtemplate(articles[articlename]));
 });
 
 app.get('/ui/style.css', function (req, res) {
