@@ -3,7 +3,22 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-
+var content = {
+    title: "Article One | Bijo Mariyil",
+    heading: "ARTICLE O N E",
+    date: "02nd october 2016",
+    content: `
+    <p>
+        Hi Everybody, I am Little busy with my duties and responsibilities and also late. Anyway this is my first Article.
+    </p>
+    <p>
+        Hi Everybody, I am a bit late. Trying to do fast. Anyway this is my First Article.
+    </p>
+    <p>
+        Hi Everybody, At last this is my First Article.
+    </p>
+    `
+};
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
