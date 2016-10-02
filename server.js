@@ -4,7 +4,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articles = {
-    article1:{
+    articleone:{
     title: "Article One | Bijo Mariyil",
     heading: "ARTICLE O N E",
     date: "02nd october 2016",
@@ -19,7 +19,7 @@ var articles = {
         Hi Everybody, At last this is my First Article.
     </p> `
 },
-    article2:{
+    articletwo:{
     title: "Article Two | Bijo Mariyil",
     heading: "ARTICLE T W O",
     date: "02nd october 2016",
@@ -31,7 +31,7 @@ var articles = {
         Hi Everybody, I am a bit late. Trying to do fast. Anyway this is my First Article.
     </p> `
 },
-    article3:{
+    articlethree:{
     title: "Article Three | Bijo Mariyil",
     heading: "ARTICLE T H R E E",
     date: "02nd october 2016",
@@ -79,7 +79,7 @@ app.get('/', function (req, res) {
 });
 
 app.get ('/:articlename', function (req, res) {
-    //articlename=article1
+    //articlename=articleone
     //articles(articlename)={}content object of article one
     var articlename=req.params.articlename;
   res.send(createtemplate(Articles(articlename)));
