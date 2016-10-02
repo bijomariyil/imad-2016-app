@@ -81,8 +81,8 @@ app.get('/', function (req, res) {
 app.get ('/:articlename', function (req, res) {
     //articlename=articleone
     //articles(articlename)={}content object of article one
-    var articlename=rec.params.articlename;
-  res.send(createtemplate(Articles(articlename)));
+    var articlename=req.params.articlename;
+  res.send(createtemplate(articles(articlename)));
 });
 
 app.get('/ui/style.css', function (req, res) {
