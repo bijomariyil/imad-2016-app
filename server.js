@@ -19,7 +19,7 @@ var articles = {
         Hi Everybody, At last this is my First Article.
     </p> `
 },
- article2:{
+    article2:{
     title: "Article Two | Bijo Mariyil",
     heading: "ARTICLE T W O",
     date: "02nd october 2016",
@@ -31,12 +31,12 @@ var articles = {
         Hi Everybody, I am a bit late. Trying to do fast. Anyway this is my First Article.
     </p> `
 },
- article3:{
+    article3:{
     title: "Article Three | Bijo Mariyil",
     heading: "ARTICLE T H R E E",
     date: "02nd october 2016",
     content: `
-        <p>
+    <p>
         Hi Everybody, At last this is my Third Article.
     </p> `
 }
@@ -46,8 +46,7 @@ function createtemplate (data) {
     var heading=data.heading;
     var date=data.date;
     var content=data.content;
-    
-var htmltemplate=`
+    var htmltemplate=`
 <html>
    <title>
        ${title}
@@ -80,6 +79,8 @@ app.get('/', function (req, res) {
 });
 
 app.get ('/:articlename', function (req, res) {
+    //articlename=article1
+    //articles(articlename)={}content object of article one
     var articlename=req.params.articlename;
   res.send(createtemplate(Articles(articlename)));
 });
