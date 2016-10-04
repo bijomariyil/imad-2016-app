@@ -18,7 +18,7 @@ var articles = {
     <p>
         Hi Everybody, At last this is my First Article.
     </p>`
-},
+}, 
     articletwo:{
     title: "Article Two | Bijo Mariyil",
     heading: "ARTICLE T W O",
