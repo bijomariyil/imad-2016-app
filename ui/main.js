@@ -4,6 +4,7 @@ var element=document.getElementById("main-text"
 element.innerHTML="Changed TEXT";
 var img=document.getElementById("madi"
 );
+var marginleft=0;
 function moveright() { 
     marginleft=marginleft + 5;
     img.style.marginlLeft=marginleft="px";
