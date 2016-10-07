@@ -5,5 +5,5 @@ element.innerHTML="Changed TEXT";
 var img=document.getElementById("madi"
 );
 img.onclick=function(){
-    img.style.marginleft="50px";
+    img.style.marginLeft='100px';
 }; 
