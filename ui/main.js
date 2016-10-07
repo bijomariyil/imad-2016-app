@@ -12,4 +12,4 @@ function moveright() {
 img.onclick=function(){
     var interval=setinterval (movRight, 50);
     img.style.marginLeft='100px';
-};
+}; 
